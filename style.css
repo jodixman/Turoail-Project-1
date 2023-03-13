@@ -18,8 +18,9 @@ html{
     background: linear-gradient(to top,#c72092,#6c14d0);
 }
 
-/*------------------------------------Section------------------------------------------*/
 
+
+/*--============ 1. SECTION ============---*/
 section{
     width: 100%;
     height:100vh;
@@ -32,30 +33,30 @@ section{
 
 /*Navigation*/
 section nav{
-    display: flex;
-    align-items: center; /*position vertical*/
-    justify-content: space-around; /*Position Horizontal*/
-    box-shadow: 0 0 8px black;
-    background: white;
-    position: fixed; /*Position tetap di atas*/
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
+    display         : flex;
+    align-items     : center; /*position vertical*/
+    justify-content : space-around; /*Position Horizontal*/
+    position        : fixed; /*Position tetap di atas*/
+    background      : white;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    z-index         : 100;
+    box-shadow      : 0 0 8px black;
 }
 
 section nav .logo{
-    font-size: 35px;
-    color: #c72092;
-    margin: 5px 0;
-    cursor: pointer; /*biar bisa di click*/
-    position: relative;
-    left: -4%;
+    font-size   : 35px;
+    margin      : 5px 0;
+    left        : -4%;
+    color       : #c72092;
+    position    : relative;
+    cursor      : pointer; /*biar bisa di click*/
 }    
 
 section nav .logo .span{
-    color: #6c14d0;
-    text-decoration: underline; 
+    color           : #6c14d0;
+    text-decoration : underline; 
 }
 
 section nav ul{
@@ -63,14 +64,14 @@ section nav ul{
 }
 
 section nav ul li{
-    display: inline-block;
-    margin: 5px 15px;
+    display : inline-block;
+    margin  : 5px 15px;
 }
 
 section nav ul li a{
-    text-decoration: none; /*Agar garis bawahnya hilang*/
-    color: black;
-    transition: 0.2s; /*Transation warna saat di click*/
+    text-decoration : none; /*Agar garis bawahnya hilang*/
+    color           : black;
+    transition      : 0.2s; /*Transation warna saat di click*/
 }   
 
 section nav ul li  a:hover{ /*Hover ini untuk bisa berubah warna atau bentuk saat menuju text*/
@@ -148,10 +149,10 @@ section .main .social_icon i:hover{
 section .main .button{
     position: absolute;
     left: 22.5%;
-    top: 85%;
-    padding: 20px 50px;
-    border-radius: 30px;
-    background: linear-gradient(to right,#c72092, #6c14d0);
+    top             : 85%;
+    padding         : 20px 50px;
+    border-radius   : 30px;
+    background      : linear-gradient(to right,#c72092, #6c14d0);
     cursor: pointer;
     box-shadow: 0 5px 8px #6c14d0;
 }
@@ -172,32 +173,34 @@ section .main .button:hover i{
 }
 
 
-/*------------------------------------Product------------------------------------------*/
 
+
+
+/*--============ 2. PRODUCT ============---*/
 .products{
-    width: 100%;
-    height: 140vh;
-    padding: 25px 0;
+    width   : 100%;
+    height  : 140vh;
+    padding : 25px 0;
 }
 
 .products h1{
-    margin: 35px 0;
-    font-size: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    background:linear-gradient(to right,#c72092,#6c14d0); 
-    -webkit-background-clip : text; 
-    -webkit-text-fill-color: transparent; 
+    margin                      : 35px 0;
+    font-size                   : 60px;
+    display                     : flex;
+    align-items                 : center;
+    justify-content             : center;
+    text-transform              : uppercase;
+    -webkit-background-clip     : text; 
+    -webkit-text-fill-color     : transparent; 
+    background                  : linear-gradient(to right,#c72092,#6c14d0); 
 }
 
 .products .box{
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 35px 0;
+    display                 : grid;
+    margin                  : 0 auto;
+    width                   : 90%;
+    grid-gap                : 35px 0;
+    grid-template-columns   : 1fr 1fr 1fr 1fr;
 }
 
 .products .box .card{
@@ -245,14 +248,15 @@ section .main .button:hover i{
 }
 
 .products .box .card .small_card i{
-    width: 45px;
-    height: 45px;
-    border-radius: 5px;
-    font-size: 18px;
-    margin: 2px 0;
-    line-height: 40px;
-    border: 2px solid #999999;
-    transition: 0.2s;
+    width           : 45px;
+    height          : 45px;
+    border          : 2px solid #999999;
+    border-radius   : 5px;
+    font-size       : 18px;
+    margin          : 2px 0;
+    line-height     : 40px;
+    transition      : 0.2s;
+
 }
 
 .products .box .card .small_card i:hover{
@@ -292,8 +296,11 @@ section .main .button:hover i{
     background: linear-gradient(to right, #6c14d0,#c72092);
 }
 
-/*------------------------------------About------------------------------------------*/
 
+
+
+
+/*--============ 3. ABOUT ============---*/
 .about{
     width: 100%;
     height: 100vh;
@@ -408,8 +415,10 @@ section .main .button:hover i{
 
 }
 
-/*------------------------------------Review------------------------------------------*/
 
+
+
+/*--============ 4. REVIEW ============---*/
 .review{
     width: 100%;
     height: 100vh;
@@ -426,13 +435,13 @@ section .main .button:hover i{
 }
 
 .review .review_box{ /*Penting*/
-    width: 95%;
-    position: relative;
-    top: 7%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
+    position        : relative;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    margin          : 0 auto;
+    width           : 95%;
+    top             : 7%;
 }
 
 .review .profile .profile_image{
@@ -498,8 +507,10 @@ section .main .button:hover i{
     margin-top: 15px;
 }
 
-/*------------------------------------Services------------------------------------------*/
 
+
+
+/*--============ 5. SERVICES ============---*/
 .services{
     width: 70%;
     margin: 0 auto;
@@ -550,8 +561,9 @@ section .main .button:hover i{
 }
 
 
-/*------------------------------------Login Form------------------------------------------*/
 
+
+/*--============ 6. LOGIN FORM ============---*/
 .login_form{
     width: 100%;
     height: auto;
@@ -686,8 +698,8 @@ section .main .button:hover i{
 }
 
 
-/*------------------------------------Footer------------------------------------------*/
 
+/*--============ 7. FOOTER ============---*/
 footer{
     width: 100%;
 }
